@@ -1,6 +1,14 @@
 import scrapy
 from foodscraper.items import FoodItem
 
+#
+#The following code is based on a Scrapy tutorial
+# the tutorial scraped books from https://books.toscrape.com/, a website to practice web scraping.
+# I used to knowledge gained from this tutorial to create a Scrapy spider and use it on the 
+#BBC Good Food website https://www.bbcgoodfood.com/. to scrape recipes. 
+#with additional features incorporated and modifications made for my project demands
+#
+
 class FoodspiderSpider(scrapy.Spider):
     name = "foodspider"
     allowed_domains = ["www.bbcgoodfood.com"]
